@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d14;
+  --foreground: #e8e8f0;
+  --primary: #7c6fff;
+  --accent: #4ecdc4;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.2s cubic-bezier(0.23, 1.0, 0.32, 1);
+}
+
+.btn-primary:hover {
+  background-color: #6a5ce6;
+  transform: translateY(-1px);
+}
+
+.glass {
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(122, 111, 255, 0.1);
+}
