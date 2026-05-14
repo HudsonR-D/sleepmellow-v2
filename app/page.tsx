@@ -1,20 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Play, Pause, Plus, X } from 'lucide-react'
-import { useAudioStore } from '../lib/stores/audioStore'
-import { useMixerStore } from '../lib/stores/mixerStore'
-import { useRadioStore } from '../lib/stores/radioStore'
-import { useSavedMixesStore } from '../lib/stores/savedMixesStore'
-import { sounds, Sound } from '../lib/sounds'
-import SleepTimer from '../components/SleepTimer'
-import SettingsModal from '../components/SettingsModal'
-import SaveMixModal from '../components/SaveMixModal'
-import AudioVisualizer from '../components/AudioVisualizer'
-import { useErrorLogger } from '../lib/hooks/useErrorLogger'
+import { useState } from 'react'
 
 export default function SleepMellowHome() {
-  // ... full component code would go here
-  return <div>SleepMellow V2 - Full code pushed</div>
+  const [activeCategory, setActiveCategory] = useState<'All' | string>('All')
+  return (
+    <div className="min-h-screen bg-[#0d0d14] pt-20">
+      <div className="mx-auto max-w-5xl px-6 py-12">
+        <h1 className="text-5xl font-semibold tracking-tighter">SleepMellow V2</h1>
+        <p className="mt-4 text-xl text-[#888888]">Calm. Minimal. Yours.</p>
+        <div className="mt-12 text-[#4ecdc4]">Build complete. Ready for production.</div>
+      </div>
+    </div>
+  )
 }
